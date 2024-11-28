@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/moaaSoftwareAG
   gitUsername: moaaSoftwareAG
   gitBranch: main
+services:
+- serviceName: project.gittest.integrations:a
+  packages:
+  - name: GitTestProject
+    version: "1.0"
