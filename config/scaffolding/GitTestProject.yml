@@ -7,6 +7,10 @@ packages:
   gitUrl: https://github.com/moaaSoftwareAG
   gitUsername: moaaSoftwareAG
   gitBranch: main
+- name: WmSalesforceProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
+  wpmVersion: v10.7.0
 services:
 - serviceName: project.gittest.integrations:aaa
   packages:
