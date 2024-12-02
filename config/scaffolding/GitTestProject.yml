@@ -11,6 +11,10 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
   wpmVersion: v10.7.0
+- name: WmGainsightProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
+  wpmVersion: v10.7.0
 services:
 - serviceName: project.gittest.integrations:aaa
   packages:
