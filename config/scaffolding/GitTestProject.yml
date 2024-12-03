@@ -15,6 +15,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
   wpmVersion: v10.7.0
+- name: SIQACloudStreamsTests
+  gitServerName: moaaTestServerName
+  gitUrl: https://github.webmethods.io/mjan
+  gitUsername: moaa
+  gitBranch: main
 services:
 - serviceName: project.gittest.integrations:aaa
   packages:
