@@ -20,6 +20,11 @@ packages:
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: moaa
   gitBranch: main
+- name: DesignerStepsInCloudEditorPackage
+  gitServerName: moaa
+  gitUrl: https://github.com/santhu736852
+  gitUsername: moaaSoftwareAG
+  gitBranch: main
 services:
 - serviceName: project.gittest.integrations:aaa
   packages:
