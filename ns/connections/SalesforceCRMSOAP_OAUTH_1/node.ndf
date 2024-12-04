@@ -3,7 +3,7 @@
 <Values version="2.0">
   <value name="node_type">CloudConnectionNode</value>
   <value name="node_subtype">unknown</value>
-  <value name="node_nsName">connections:SalesforceCRMSOAP_4</value>
+  <value name="node_nsName">connections:SalesforceCRMSOAP_OAUTH_1</value>
   <value name="node_pkg">GitTestProject</value>
   <value name="is_public">false</value>
   <value name="cloudNodeVersion">1</value>
@@ -11,9 +11,9 @@
     <number name="connectionNodeVersion" type="Integer">1</number>
     <value name="connectorID">com.softwareag.cloudstreams.salesforce_v53</value>
     <value name="providerName">WmSalesforceProvider</value>
-    <value name="providerConnectionType">sagcloud</value>
+    <value name="providerConnectionType">sagcloud_oauth_v20_authorization_code</value>
     <record name="connectionGroupProperties" javaclass="com.wm.util.Values">
-      <value name="cn.providerUrl">https://login.salesforce.com/services/Soap/u/53.0</value>
+      <value name="cn.providerUrl">https://ap17.salesforce.com/services/Soap/u/53.0</value>
       <value name="cn.connectTimeout">180000</value>
       <value name="cn.readTimeout">180000</value>
       <value name="cn.socketStaleCheck">true</value>
@@ -34,24 +34,26 @@
       <value name="cn.enableCompression">false</value>
       <value name="cn.enableSNI">true</value>
       <value name="cn.sniServerName"></value>
-      <value name="cr.username">rithi@softwareag.com</value>
-      <value name="cr.password">connections:SalesforceCRMSOAP_4.cr.password</value>
-      <value name="cr.authSchemeType">none</value>
-      <value name="cr.preemptiveAuthEnabled">false</value>
-      <value name="cr.securityRealm"></value>
-      <value name="pr.httpContentCharSet">ISO-8859-1</value>
-      <value name="pr.protocolVersion">HTTP/1.1</value>
-      <value name="pr.userAgent">Cloudstreams</value>
-      <value name="pr.useExpectCont">false</value>
-      <value name="pr.useChunking">false</value>
-      <value name="pr.followServerRedirects">true</value>
-      <value name="pr.allowCircularRedirects">true</value>
-      <value name="pr.serverRedirectMax">5</value>
-      <value name="rh.requestHeaderNames">Content-Type,SOAPAction</value>
-      <value name="rh.requestHeaderValues">text/xml,login</value>
+      <value name="oauth.consumerId">3MVG97quAmFZJfVw64SrbQeOm2ghEfkSZRwwqzPsokilqZ9h962MLjhA1brH2Cqr8iGaD.y0GhtCWy3Jm5_Oo</value>
+      <value name="oauth.consumerSecret">connections:SalesforceCRMSOAP_OAUTH_1.oauth.consumerSecret</value>
+      <value name="oauth.accessToken">connections:SalesforceCRMSOAP_OAUTH_1.oauth.accessToken</value>
+      <value name="oauth_v20.authorizationServerUrl">https://login.salesforce.com/services/oauth2/authorize</value>
+      <value name="oauth_v20.authenticationServerUrl">https://login.salesforce.com/services/oauth2/token</value>
+      <value name="oauth_v20.instanceURL">https://ap17.salesforce.com</value>
+      <value name="oauth_v20.refreshAccessToken">true</value>
+      <value name="oauth_v20.refreshToken">connections:SalesforceCRMSOAP_OAUTH_1.oauth_v20.refreshToken</value>
+      <value name="oauth_v20.accessTokenRefreshURL">https://login.salesforce.com/services/oauth2/token</value>
+      <value name="oauth_v20.accessTokenRefreshURLRequest">Body Query String</value>
+      <value name="oauth_v20.accessTokenRefreshCustomESBService"></value>
+      <value name="oauth_v20.authorizationHeaderPrefix">Bearer</value>
+      <value name="oauth_v20.authorizationHeaderInTokenRefresh">false</value>
+      <value name="oauth_v20.scope">offline_access api refresh_token</value>
+      <value name="cx.grant_type">refresh_token</value>
     </record>
     <array name="passmanHandles" type="value" depth="1">
-      <value>connections:SalesforceCRMSOAP_4.cr.password</value>
+      <value>connections:SalesforceCRMSOAP_OAUTH_1.oauth.consumerSecret</value>
+      <value>connections:SalesforceCRMSOAP_OAUTH_1.oauth.accessToken</value>
+      <value>connections:SalesforceCRMSOAP_OAUTH_1.oauth_v20.refreshToken</value>
     </array>
     <record name="connectionManagerProperties" javaclass="com.wm.util.Values">
       <value name="poolable">true</value>
@@ -62,11 +64,12 @@
       <value name="expireTimeout">1000</value>
       <value name="startupRetryCount">0</value>
       <value name="startupBackoffSecs">10</value>
-      <value name="timeoutType">fixed</value>
-      <value name="sessionExpiry">14</value>
+      <value name="timeoutType">auto</value>
+      <value name="sessionExpiry">0</value>
     </record>
     <array name="formattableFields" type="value" depth="1">
     </array>
-    <value name="connectionEnabled">true</value>
+    <value name="connectionEnabled">false</value>
   </record>
+  <value name="LOCK_REQUIRED">false</value>
 </Values>
