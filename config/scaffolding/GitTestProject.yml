@@ -25,6 +25,10 @@ packages:
   gitUrl: https://github.com/santhu736852
   gitUsername: moaaSoftwareAG
   gitBranch: main
+- name: WmLinkedInProvider
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: supported
+  wpmVersion: latest
 services:
 - serviceName: project.gittest.integrations:aaa
   packages:

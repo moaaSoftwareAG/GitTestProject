@@ -12,17 +12,18 @@
     <value name="WmGainsightProvider">10.7.0.0.17</value>
     <value name="SIQACloudStreamsTests">1.0</value>
     <value name="DesignerStepsInCloudEditorPackage">1.0</value>
+    <value name="WmLinkedInProvider">9.8.0.0.1</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">31</value>
+  <value name="build">32</value>
   <null name="description"/>
   <value name="created_date">28-11-2024 05:18:41 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2024-12-04T12:11:05.0354629Z</value>
+  <value name="lastUpdated">2024-12-05T05:24:52.7472276Z</value>
   <value name="wmProjectId">fl9477a5ac4465f1ed0717ca</value>
   <value name="creator">Mohamed Naufal A</value>
 </Values>
