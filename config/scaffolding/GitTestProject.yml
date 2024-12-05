@@ -8,29 +8,55 @@ packages:
   gitUsername: moaaSoftwareAG
   gitBranch: main
 - name: WmSalesforceProvider
+  version: 10.7.0.0.53
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
   wpmVersion: v10.7.0
 - name: WmGainsightProvider
+  version: 10.7.0.0.17
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
   wpmVersion: v10.7.0
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: moaaTestServerName
   gitUrl: https://github.webmethods.io/mjan
   gitUsername: moaa
   gitBranch: main
 - name: DesignerStepsInCloudEditorPackage
+  version: "1.0"
   gitServerName: moaa
   gitUrl: https://github.com/santhu736852
   gitUsername: moaaSoftwareAG
   gitBranch: main
 - name: WmLinkedInProvider
+  version: 9.8.0.0.1
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
   wpmVersion: latest
 services:
-- serviceName: project.gittest.integrations:aaa
+- serviceName: project.gittest.integrations:test
   packages:
   - name: GitTestProject
     version: "1.0"
+  - name: WmCloudStreams
+    version: 11.1.0.0.83
+  - name: WmLinkedInProvider
+    version: 9.8.0.0.1
+  - name: DesignerStepsInCloudEditorPackage
+    version: "1.0"
+  - name: WmGainsightProvider
+    version: 10.7.0.0.17
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.53
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2020
+configurationVariables:
+  ? iscloudstreamsconnectorservice.com_softwareag_cloudstreams_salesforce_v53..fl9477a5ac4465f1ed0717ca..actions:customAction_1.connectionAlias
+  : connections:SalesforceCRMSOAP_4
+  ? iscloudstreamsconnectorservice.com_softwareag_cloudstreams_salesforce_v53..fl9477a5ac4465f1ed0717ca..actions:customAction_1.virtualServiceName
+  : WmCloudStreams.SoapVS
