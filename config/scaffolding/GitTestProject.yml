@@ -35,7 +35,7 @@ packages:
   wpmRegistry: supported
   wpmVersion: latest
 services:
-- serviceName: project.gittest.integrations:FLOW
+- serviceName: project.gittest.integrations:test1
   packages:
   - name: GitTestProject
     version: "1.0"
@@ -56,89 +56,7 @@ services:
   - name: WmPublic
     version: 11.1.0.0.2020
 configurationVariables:
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.protocolVersion: HTTP/1.1
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cr.password: "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.socketLinger: "-1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.maximumPoolSize: "10"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cr.password: "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.hostnameVerifier: org.apache.http.conn.ssl.DefaultHostnameVerifier
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.httpContentCharSet: ISO-8859-1
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.userAgent: Cloudstreams
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.keepAliveInterval: "300000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.readTimeout: "180000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.httpContentCharSet: ISO-8859-1
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.enableSNI: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.keepAliveInterval: "300000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.useChunking: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.rh.requestHeaderNames: "Content-Type,SOAPAction"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.hostnameVerifier: org.apache.http.conn.ssl.DefaultHostnameVerifier
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.socketStaleCheck: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.expireTimeout: "1000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.startupBackoffSecs: "10"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.rh.requestHeaderNames: "Content-Type,SOAPAction"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.startupBackoffSecs: "10"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.allowCircularRedirects: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.tcpNoDelay: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.protocolVersion: HTTP/1.1
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.timeoutType: fixed
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.sockBuffSize: "8192"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.validateAfterInactivity: "1000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.followServerRedirects: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.connectTimeout: "180000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.readTimeout: "180000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.timeoutType: fixed
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.startupRetryCount: "0"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.validateAfterInactivity: "1000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.useExpectCont: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.enableSNI: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.blockTimeout: "1000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.sessionExpiry: "14"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cr.username: rithi@softwareag.com
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.providerUrl: https://login.salesforce.com/services/Soap/u/53.0
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.poolIncrementSize: "1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.tcpNoDelay: "false"
   ? iscloudstreamsconnectorservice.com_softwareag_cloudstreams_salesforce_v53..fl9477a5ac4465f1ed0717ca..actions:customAction_1.connectionAlias
   : connections:SalesforceCRMSOAP_5
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cr.authSchemeType: none
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.connectionEnabled: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.retryCount: "3"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cr.username: rithi@softwareag.com
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.sessionExpiry: "14"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.idleTimeout: "-1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cr.authSchemeType: none
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.minimumPoolSize: "1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.followServerRedirects: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.reuseAddr: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.useChunking: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.poolable: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.retryCount: "3"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.expireTimeout: "1000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.maximumPoolSize: "10"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.retryIfRequestSentOk: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.allowCircularRedirects: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.socketLinger: "-1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.reuseAddr: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.connectionEnabled: "true"
   ? iscloudstreamsconnectorservice.com_softwareag_cloudstreams_salesforce_v53..fl9477a5ac4465f1ed0717ca..actions:customAction_1.virtualServiceName
   : WmCloudStreams.SoapVS
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.pr.serverRedirectMax: "5"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.idleTimeout: "-1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.rh.requestHeaderValues: "text/xml,login"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.userAgent: Cloudstreams
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.providerUrl: https://login.salesforce.com/services/Soap/u/53.0
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.enableCompression: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.retryIfRequestSentOk: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.minimumPoolSize: "1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.socketStaleCheck: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cr.preemptiveAuthEnabled: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.blockTimeout: "1000"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.useExpectCont: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.startupRetryCount: "0"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cn.sockBuffSize: "8192"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.poolIncrementSize: "1"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.enableCompression: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.pr.serverRedirectMax: "5"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.poolable: "true"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.rh.requestHeaderValues: "text/xml,login"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_5.cr.preemptiveAuthEnabled: "false"
-  cloudstreamsconnection.connections:SalesforceCRMSOAP_4.cn.connectTimeout: "180000"
